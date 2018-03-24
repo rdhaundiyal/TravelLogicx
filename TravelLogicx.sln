@@ -81,6 +81,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelLogicx.Foundation.The
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelLogicx.Project.Common", "src\Project\Common\code\TravelLogicx.Project.Common.csproj", "{7624321A-1B02-4F81-9BAC-9C1B17DE2D59}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{A4EE5B7B-8560-471E-A0A3-29F57664C3F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Base", "Base", "{6AF56350-2EA7-418F-A16C-81C61E7D9904}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelLogicx.Foundation.Base", "src\Foundation\Base\code\TravelLogicx.Foundation.Base.csproj", "{EC81476B-9458-4B40-B28D-D77BA0D370EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependency Injection", "Dependency Injection", "{372FD31F-B545-4AC8-8E73-A42F52DB088B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelLogicx.Foundation.DependencyInjection", "src\Foundation\Dependency Injection\code\TravelLogicx.Foundation.DependencyInjection.csproj", "{E7694C5C-306A-41E9-8B81-F91E8C69AE4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +169,14 @@ Global
 		{7624321A-1B02-4F81-9BAC-9C1B17DE2D59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7624321A-1B02-4F81-9BAC-9C1B17DE2D59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7624321A-1B02-4F81-9BAC-9C1B17DE2D59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC81476B-9458-4B40-B28D-D77BA0D370EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC81476B-9458-4B40-B28D-D77BA0D370EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC81476B-9458-4B40-B28D-D77BA0D370EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC81476B-9458-4B40-B28D-D77BA0D370EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7694C5C-306A-41E9-8B81-F91E8C69AE4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7694C5C-306A-41E9-8B81-F91E8C69AE4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7694C5C-306A-41E9-8B81-F91E8C69AE4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7694C5C-306A-41E9-8B81-F91E8C69AE4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -200,5 +218,9 @@ Global
 		{38B9CD0D-119A-4C47-B5A3-C58C644EB009} = {6A58ECB5-902E-49E0-B7DA-2931DC2C46BC}
 		{F4234C54-DEB1-4B52-8D18-931EEC79112F} = {D117C39F-B8EA-428C-870D-6B2C0F7237DB}
 		{7624321A-1B02-4F81-9BAC-9C1B17DE2D59} = {CB0D76AD-6FBE-48ED-AB0C-F37DED116540}
+		{6AF56350-2EA7-418F-A16C-81C61E7D9904} = {88935919-1AE9-4EC0-AE7B-E162B2619836}
+		{EC81476B-9458-4B40-B28D-D77BA0D370EE} = {6AF56350-2EA7-418F-A16C-81C61E7D9904}
+		{372FD31F-B545-4AC8-8E73-A42F52DB088B} = {88935919-1AE9-4EC0-AE7B-E162B2619836}
+		{E7694C5C-306A-41E9-8B81-F91E8C69AE4A} = {372FD31F-B545-4AC8-8E73-A42F52DB088B}
 	EndGlobalSection
 EndGlobal

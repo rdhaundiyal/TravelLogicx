@@ -101,7 +101,55 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\css\bookingstyle.css" />
+    <Content Include="Assets\css\bootstrap.css" />
+    <Content Include="Assets\css\flexslider.css" />
+    <Content Include="Assets\css\font-awesome.css" />
+    <Content Include="Assets\css\jquery-ui.css" />
+    <Content Include="Assets\css\simpleLightbox.css" />
+    <Content Include="Assets\css\style.css" />
     <Content Include="Global.asax" />
+    <Content Include="Assets\images\1.jpg" />
+    <Content Include="Assets\images\2.jpg" />
+    <Content Include="Assets\images\3.jpg" />
+    <Content Include="Assets\images\4.jpg" />
+    <Content Include="Assets\images\arrow.png" />
+    <Content Include="Assets\images\arrr1.png" />
+    <Content Include="Assets\images\arrr2.png" />
+    <Content Include="Assets\images\c1.jpg" />
+    <Content Include="Assets\images\c2.jpg" />
+    <Content Include="Assets\images\c3.jpg" />
+    <Content Include="Assets\images\c4.jpg" />
+    <Content Include="Assets\images\dott.png" />
+    <Content Include="Assets\images\g1.jpg" />
+    <Content Include="Assets\images\g10.jpg" />
+    <Content Include="Assets\images\g11.jpg" />
+    <Content Include="Assets\images\g12.jpg" />
+    <Content Include="Assets\images\g2.jpg" />
+    <Content Include="Assets\images\g3.jpg" />
+    <Content Include="Assets\images\g4.jpg" />
+    <Content Include="Assets\images\g5.jpg" />
+    <Content Include="Assets\images\g6.jpg" />
+    <Content Include="Assets\images\g7.jpg" />
+    <Content Include="Assets\images\g8.jpg" />
+    <Content Include="Assets\images\g9.jpg" />
+    <Content Include="Assets\images\img-sp.png" />
+    <Content Include="Assets\images\t1.jpg" />
+    <Content Include="Assets\images\t2.jpg" />
+    <Content Include="Assets\images\t3.jpg" />
+    <Content Include="Assets\images\t4.jpg" />
+    <Content Include="Assets\js\bootstrap.js" />
+    <Content Include="Assets\js\easing.js" />
+    <Content Include="Assets\js\easyResponsiveTabs.js" />
+    <Content Include="Assets\js\jquery-2.1.4.min.js" />
+    <Content Include="Assets\js\jquery-ui.js" />
+    <Content Include="Assets\js\jquery.countup.js" />
+    <Content Include="Assets\js\jquery.flexslider.js" />
+    <Content Include="Assets\js\jquery.waypoints.min.js" />
+    <Content Include="Assets\js\move-top.js" />
+    <Content Include="Assets\js\responsiveslides.min.js" />
+    <Content Include="Assets\js\simpleLightbox.js" />
+    <Content Include="Assets\js\SmoothScroll.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -113,8 +161,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\web.config" />
     <Content Include="packages.config" />
+    <Content Include="Assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="Assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="Assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Assets\fonts\FontAwesome.otf" />
+    <Content Include="Assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Assets\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -125,7 +179,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
