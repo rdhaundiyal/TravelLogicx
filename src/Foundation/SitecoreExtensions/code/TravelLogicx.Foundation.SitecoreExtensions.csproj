@@ -8,12 +8,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F4234C54-DEB1-4B52-8D18-931EEC79112F}</ProjectGuid>
+    <ProjectGuid>{B9D5915E-B672-4979-BA18-D3B540B7A2F0}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TravelLogicx.Foundation.Theming</RootNamespace>
-    <AssemblyName>TravelLogicx.Foundation.Theming</AssemblyName>
+    <RootNamespace>TravelLogicx.Foundation.SitecoreExtensions</RootNamespace>
+    <AssemblyName>TravelLogicx.Foundation.SitecoreExtensions</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -47,6 +47,12 @@
       <HintPath>..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Sitecore.Kernel">
+      <HintPath>..\..\..\..\lib\Sitecore.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Mvc">
+      <HintPath>..\..\..\..\lib\Sitecore.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -101,68 +107,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\css\bookingstyle.css" />
-    <Content Include="Assets\css\bootstrap.css" />
-    <Content Include="Assets\css\flexslider.css" />
-    <Content Include="Assets\css\font-awesome.css" />
-    <Content Include="Assets\css\jquery-ui.css" />
-    <Content Include="Assets\css\simpleLightbox.css" />
-    <Content Include="Assets\css\style.css" />
-    <Content Include="Assets\images\1.jpg" />
-    <Content Include="Assets\images\2.jpg" />
-    <Content Include="Assets\images\3.jpg" />
-    <Content Include="Assets\images\4.jpg" />
-    <Content Include="Assets\images\arrow.png" />
-    <Content Include="Assets\images\arrr1.png" />
-    <Content Include="Assets\images\arrr2.png" />
-    <Content Include="Assets\images\c1.jpg" />
-    <Content Include="Assets\images\c2.jpg" />
-    <Content Include="Assets\images\c3.jpg" />
-    <Content Include="Assets\images\c4.jpg" />
-    <Content Include="Assets\images\dott.png" />
-    <Content Include="Assets\images\g1.jpg" />
-    <Content Include="Assets\images\g10.jpg" />
-    <Content Include="Assets\images\g11.jpg" />
-    <Content Include="Assets\images\g12.jpg" />
-    <Content Include="Assets\images\g2.jpg" />
-    <Content Include="Assets\images\g3.jpg" />
-    <Content Include="Assets\images\g4.jpg" />
-    <Content Include="Assets\images\g5.jpg" />
-    <Content Include="Assets\images\g6.jpg" />
-    <Content Include="Assets\images\g7.jpg" />
-    <Content Include="Assets\images\g8.jpg" />
-    <Content Include="Assets\images\g9.jpg" />
-    <Content Include="Assets\images\img-sp.png" />
-    <Content Include="Assets\images\t1.jpg" />
-    <Content Include="Assets\images\t2.jpg" />
-    <Content Include="Assets\images\t3.jpg" />
-    <Content Include="Assets\images\t4.jpg" />
-    <Content Include="Assets\js\bootstrap.js" />
-    <Content Include="Assets\js\easing.js" />
-    <Content Include="Assets\js\easyResponsiveTabs.js" />
-    <Content Include="Assets\js\jquery-2.1.4.min.js" />
-    <Content Include="Assets\js\jquery-ui.js" />
-    <Content Include="Assets\js\jquery.countup.js" />
-    <Content Include="Assets\js\jquery.flexslider.js" />
-    <Content Include="Assets\js\jquery.waypoints.min.js" />
-    <Content Include="Assets\js\move-top.js" />
-    <Content Include="Assets\js\responsiveslides.min.js" />
-    <Content Include="Assets\js\simpleLightbox.js" />
-    <Content Include="Assets\js\SmoothScroll.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensions\ItemExtensions.cs" />
+    <Compile Include="Extensions\SiteExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <Content Include="Assets\fonts\fontawesome-webfont.eot" />
-    <Content Include="Assets\fonts\fontawesome-webfont.ttf" />
-    <Content Include="Assets\fonts\fontawesome-webfont.woff" />
-    <Content Include="Assets\fonts\fontawesome-webfont.woff2" />
-    <Content Include="Assets\fonts\FontAwesome.otf" />
-    <Content Include="Assets\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="Assets\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -170,10 +123,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -187,9 +137,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>35809</DevelopmentServerPort>
+          <DevelopmentServerPort>60476</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:35809/</IISUrl>
+          <IISUrl>http://localhost:60476/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

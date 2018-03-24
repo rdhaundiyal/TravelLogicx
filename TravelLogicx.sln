@@ -91,6 +91,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependency Injection", "Dep
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelLogicx.Foundation.DependencyInjection", "src\Foundation\Dependency Injection\code\TravelLogicx.Foundation.DependencyInjection.csproj", "{E7694C5C-306A-41E9-8B81-F91E8C69AE4A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{A6EA1BCB-F876-486F-88CE-F39CA6576586}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelLogicx.Foundation.Configuration", "src\Foundation\Configuration\code\TravelLogicx.Foundation.Configuration.csproj", "{F3122E8C-8317-49C2-A704-06CBFB6082C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SitecoreExtensions", "SitecoreExtensions", "{0389CC58-1042-4818-BB97-97984B2FF164}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelLogicx.Foundation.SitecoreExtensions", "src\Foundation\SitecoreExtensions\code\TravelLogicx.Foundation.SitecoreExtensions.csproj", "{B9D5915E-B672-4979-BA18-D3B540B7A2F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -177,6 +185,14 @@ Global
 		{E7694C5C-306A-41E9-8B81-F91E8C69AE4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7694C5C-306A-41E9-8B81-F91E8C69AE4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7694C5C-306A-41E9-8B81-F91E8C69AE4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3122E8C-8317-49C2-A704-06CBFB6082C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3122E8C-8317-49C2-A704-06CBFB6082C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3122E8C-8317-49C2-A704-06CBFB6082C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3122E8C-8317-49C2-A704-06CBFB6082C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9D5915E-B672-4979-BA18-D3B540B7A2F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9D5915E-B672-4979-BA18-D3B540B7A2F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9D5915E-B672-4979-BA18-D3B540B7A2F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9D5915E-B672-4979-BA18-D3B540B7A2F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -222,5 +238,9 @@ Global
 		{EC81476B-9458-4B40-B28D-D77BA0D370EE} = {6AF56350-2EA7-418F-A16C-81C61E7D9904}
 		{372FD31F-B545-4AC8-8E73-A42F52DB088B} = {88935919-1AE9-4EC0-AE7B-E162B2619836}
 		{E7694C5C-306A-41E9-8B81-F91E8C69AE4A} = {372FD31F-B545-4AC8-8E73-A42F52DB088B}
+		{A6EA1BCB-F876-486F-88CE-F39CA6576586} = {88935919-1AE9-4EC0-AE7B-E162B2619836}
+		{F3122E8C-8317-49C2-A704-06CBFB6082C4} = {A6EA1BCB-F876-486F-88CE-F39CA6576586}
+		{0389CC58-1042-4818-BB97-97984B2FF164} = {88935919-1AE9-4EC0-AE7B-E162B2619836}
+		{B9D5915E-B672-4979-BA18-D3B540B7A2F0} = {0389CC58-1042-4818-BB97-97984B2FF164}
 	EndGlobalSection
 EndGlobal
