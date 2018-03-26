@@ -9,7 +9,7 @@ namespace TravelLogicx.Feature.Navigation.Controllers
     public class NavigationController : Controller
     {
         // GET: Navigation
-        public ActionResult Index()
+        public ActionResult TopMenu()
         {
             return View();
         }
