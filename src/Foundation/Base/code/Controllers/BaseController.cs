@@ -9,7 +9,7 @@ using Sitecore.Mvc.Presentation;
 
 namespace TravelLogicx.Foundation.Base.Controllers
 {
-    public class BaseController : Controller
+    public abstract class BaseController : Controller
     {
         /// <summary>
         /// return current item if the item path is null or empty else return item for the corresponding path
@@ -23,6 +23,13 @@ namespace TravelLogicx.Foundation.Base.Controllers
             using (var context = new SitecoreContext())
             {
                 return string.IsNullOrEmpty(path) ? context.GetCurrentItem<T>() : context.GetItem<T>(path);
+            }
+        }
+        protected T GetItem<T>(Item item) where T : class
+        {
+            using (var context = new SitecoreContext())
+            {
+                return context.Cast<T>(item);
             }
         }
 
@@ -84,5 +91,9 @@ namespace TravelLogicx.Foundation.Base.Controllers
         {
             return Sitecore.Globalization.Translate.Text(key);
         }
+
+
+
+
     }
 }
