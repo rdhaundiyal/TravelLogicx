@@ -149,7 +149,7 @@
     <Content Include="Assets\js\responsiveslides.min.js" />
     <Content Include="Assets\js\simpleLightbox.js" />
     <Content Include="Assets\js\SmoothScroll.min.js" />
-    <Content Include="Web.config" />
+    <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
