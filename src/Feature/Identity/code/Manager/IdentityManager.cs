@@ -7,12 +7,14 @@ using TravelLogicx.Feature.Identity.Repositories;
 using Sitecore;
 using Sitecore.Data.Items;
 using TravelLogicx.Foundation.SitecoreExtensions.Extensions;
+using TravelLogicx.Foundation.Base.Repositories;
+
 namespace TravelLogicx.Feature.Identity.Manager
 {
     public class IdentityManager:IIdentityManager
     {
-        private IdentityRepository _identityRepository;
-        public IdentityManager(IdentityRepository identityRepository)
+        private IBaseRepository<IdentityDetails> _identityRepository;
+        public IdentityManager(IBaseRepository<IdentityDetails> identityRepository)
         {
             _identityRepository = identityRepository;
 
