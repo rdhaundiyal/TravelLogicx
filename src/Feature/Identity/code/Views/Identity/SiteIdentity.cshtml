@@ -1,4 +1,11 @@
-﻿<div class="container">
+﻿@using Sitecore
+@using Sitecore.Mvc
+@using Glass.Mapper;
+@using Glass.Mapper.Sc;
+@using Glass.Mapper.Sc.Mvc;
+@using Glass.Mapper.Sc.Web.Mvc;
+@model TravelLogicx.Feature.Identity.Model.IdentityDetails
+<div class="container">
 
     <div class="col-md-6 top-middle">
         <ul>
@@ -10,7 +17,9 @@
     </div>
     <div class="col-md-6 top-left">
         <ul>
-            <li><i class="fa fa-mobile" aria-hidden="true"></i> +021 365 777</li>
+        
+      
+            <li><i class="fa fa-mobile" aria-hidden="true"></i> @Html.Glass().Editable(k => k.OrganizationPhone)</li>
             <li><i class="fa fa-map-marker" aria-hidden="true"></i> 132 New Lenox, 868 1st Avenue </li>
         </ul>
     </div>

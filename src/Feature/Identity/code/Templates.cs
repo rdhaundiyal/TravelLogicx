@@ -7,17 +7,17 @@ namespace TravelLogicx.Feature.Identity
 {
     public struct Templates
     {
-        public static readonly ID ID = new ID("{FA8DE5B9-D5D8-40A7-866A-23AF4F5A9629}");
+        public static readonly ID ID = new ID("{D566D488-2093-4A63-AEA1-562870462266}");
 
         public struct Fields
         {
-            public static readonly ID Logo = new ID("{E748D808-64C1-4DEC-9718-F35CF9689E4B}");
-            public static readonly ID LogoTagLine = new ID("{31D027BB-FAB5-4E1A-A66D-9F5B0FD4F005}");
-            public static readonly ID Copyright = new ID("{02115632-FE1E-4B3D-9AD4-A4DDF1F782F0}");
-            public static readonly ID OrganisationName = new ID("{EFD4980A-030C-497C-8880-40B6030AC28B}");
-            public static readonly ID OrganisationAddress = new ID("{A24DF48F-C8A3-4163-966C-8C24BD8760B2}");
-            public static readonly ID OrganisationPhone = new ID("{005ED83C-2D2F-4D07-A7A9-EB64D873DE46}");
-            public static readonly ID OrganisationEmail = new ID("{9C428556-5D7B-46AC-B0BB-B06A4F4C9591}");
+            public static readonly ID Logo = new ID("{CEB83E33-522C-4F42-A8D8-857E56FD43DC}");
+            public static readonly ID LogoTagLine = new ID("{700932E4-E3F9-461B-A3A2-5E52AD5F7F01}");
+            public static readonly ID Copyright = new ID("{A50A6BD3-D61C-48C3-8305-729C2AED5EEE}");
+            public static readonly ID OrganisationName = new ID("{2E1EB4F2-611B-4AFD-B053-61FB975DEDBF}");
+            public static readonly ID OrganisationAddress = new ID("{FA5B47CB-B553-457C-8FC8-B054CBD17770}");
+            public static readonly ID OrganisationPhone = new ID("{6AC09331-3287-47D3-B7D5-10ECD2E042F3}");
+            public static readonly ID OrganisationEmail = new ID("{51DA6D69-F1D4-47D3-9021-59D72CA1AD73}");
         }
     }
 }
