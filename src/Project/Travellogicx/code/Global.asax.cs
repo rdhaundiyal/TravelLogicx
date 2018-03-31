@@ -8,7 +8,8 @@ using System.Web.Security;
 using System.Web.SessionState;
 using System.Web.Http;
 using Sitecore;
-namespace code
+using Sitecore.Mvc;
+namespace TravelLogicx.Project.Website
 {
     public class Global : Sitecore.Web.Application
     {
